@@ -14,7 +14,7 @@ s.source            = { :http => 'https://github.com/ArkadiGiniApps/SamplePod/ra
 
 s.ios.deployment_target   = '10.0'
 s.ios.vendored_frameworks = 'UserExperiorSDK.xcframework'
-s.preserve_paths       = '*.xcframework'
+s.preserve_paths       = 'UserExperiorSDK.xcframework'
 s.swift_version = '5.0'
 
 end
