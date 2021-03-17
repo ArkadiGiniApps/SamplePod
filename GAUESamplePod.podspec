@@ -12,9 +12,10 @@ s.license           = { :type => 'Commercial', :file => 'LICENSE' }
 s.platform          = :ios
 s.source            = { :http => 'https://github.com/ArkadiGiniApps/SamplePod/raw/main/GAUESamplePod.zip' }
 
+s.swift_version = '5.0'
 s.ios.deployment_target   = '10.0'
 s.ios.vendored_frameworks = 'UserExperiorSDK.xcframework'
-s.preserve_paths       = 'UserExperiorSDK.xcframework'
-s.swift_version = '5.0'
-
+s.preserve_paths          = 'UserExperiorSDK.xcframework'
+s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+s.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
